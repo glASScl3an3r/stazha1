@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 arr = [1, 2, 12, 34, 35, 6, 0, 34, 122, 124, 789, 999, 33, 54, 763, 893]
 
 # returns [max1, max2] where max1 >= max2
@@ -38,5 +40,6 @@ def array_2_min(arr)
   [max1, max2]
 end
 
-puts array_2_max(arr)
-puts array_2_min(arr)
+puts array_2_max(arr).inspect # [999, 893]
+puts array_2_min(arr).inspect # [0, 1]
+
